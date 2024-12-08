@@ -12,7 +12,7 @@
       class="flex justify-center items-center h-screen w-screen bg-[url('https://i.imgur.com/1O8ovx1.jpeg')] bg-cover"
     >
       <div
-        class="flex gap-y-24 h-64 w-full max-w-sm flex-col rounded-3xl border-2 border-white/80 bg-gradient-to-br from-white/30 to-white/30 p-8 text-white shadow-lg backdrop-blur-lg"
+        class="group flex gap-y-24 h-64 w-full max-w-sm flex-col rounded-3xl border-2 border-white/80 bg-gradient-to-br from-white/30 to-white/30 p-8 text-white shadow-lg backdrop-blur-lg transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl"
       >
         <!-- Explication :
         * bg-gradient-to-br:  définit la direction du dégradé (du coin supérieur gauche vers le coin inférieur droit).
@@ -22,9 +22,13 @@
         * shadow-lg : applique une ombre large derrière l'élément.
         * backdrop-blur-lg : applique un flou de fond sur ce qui se trouve derrière l'élément.-->
         <div class="flex items-center justify-between">
-          <h2 class="font-bold text-xl">Mastercard</h2>
+          <h2
+            class="font-bold text-xl transition-all delay-0 duration-100 group-hover:-translate-y-2 group-hover:drop-shadow-md"
+          >
+            Mastercard
+          </h2>
           <img
-            class="size-7"
+            class="size-7 transition-all delay-75 duration-100 group-hover:-translate-y-2 group-hover:drop-shadow-md"
             src="https://i.imgur.com/eLwgPd2.png"
             alt="signal"
           />
@@ -32,17 +36,27 @@
         <div class="flex w-full items-end">
           <div class="flex flex-col gap-2">
             <div class="flex flex-rows gap-x-4">
-              <p class="uppercase">Ruchi DWIVEDI</p>
-              <p class="font-mono">8/24</p>
+              <p
+                class="uppercase transition-all delay-100 duration-100 group-hover:-translate-y-2 group-hover:drop-shadow-md"
+              >
+                Ruchi DWIVEDI
+              </p>
+              <p
+                class="font-mono ml-auto transition-all delay-150 duration-100 group-hover:-translate-y-2 group-hover:drop-shadow-md"
+              >
+                8/24
+              </p>
             </div>
-            <p class="font-mono font-bold">1234 1234 1234 1234</p>
+            <p
+              class="font-mono font-bold transition-all delay-200 duration-100 group-hover:-translate-y-2 group-hover:drop-shadow-md"
+            >
+              1234 1234 1234 1234
+            </p>
           </div>
-          <div class="ml-auto bg-white/30 px-2 py-1.5 rounded-md">
-            <img
-              class="w-11"
-              src="https://i.imgur.com/GaIY1JU.png"
-              alt="cercles"
-            />
+          <div
+            class="w-16 ml-auto bg-white/20 p-2 rounded-md transition-all delay-200 duration-100 group-hover:-translate-y-2 group-hover:drop-shadow-md"
+          >
+            <img class="" src="https://i.imgur.com/GaIY1JU.png" alt="cercles" />
           </div>
         </div>
       </div>
